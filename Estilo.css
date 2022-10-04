@@ -14,3 +14,11 @@ h1{
 .Listagem{
     text-align: center;
 }
+
+p{
+    text-align: center;
+    font-size: xx-large
+}
+button{
+    background-color: blueviolet;
+}

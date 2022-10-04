@@ -19,13 +19,12 @@
         {
             
             const conteudo = document.getElementById('texto').value;
-            const div = document.createElement('div');
             const novo = document.createElement('p');
             const novob = document.createElement('button')
             novo.innerHTML = conteudo;
             novob.innerHTML = "X";
             novob.style.color = "Red";
-            div.style.textAlign =" Center";
+
             
 
 
@@ -38,8 +37,8 @@
             novob.remove();
         })
         
-            document.div.appendChild(novo)
-            document.div.appendChild(novob)
+            document.body.appendChild(novo);
+            document.body.appendChild(novob);
             conteudo = document.getElementById('texto').value = "";
         
         }
