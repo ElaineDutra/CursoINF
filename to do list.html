@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+</head>
+<body>
+    <br>
+    <br>
+    <h1> To Do List </h1>
+    <div class="Listagem">
+    <input id="texto">
+    <button onclick="Adicionar();" id="botão" placeholder="Nomes"> ADD </button>
+
+    <script>
+        function Adicionar()
+        {
+            
+            const conteudo = document.getElementById('texto').value;
+            const div = document.createElement('div');
+            const novo = document.createElement('p');
+            const novob = document.createElement('button')
+            novo.innerHTML = conteudo;
+            novob.innerHTML = "X";
+            novob.style.color = "Red";
+            div.style.textAlign =" Center";
+            
+
+
+            novo.addEventListener('click',function(){
+            novo.style.color = "blueviolet";
+            novo.style.textDecoration ="line-through";
+        })
+            novob.addEventListener('click',function(){
+            novo.remove();
+            novob.remove();
+        })
+        
+            document.div.appendChild(novo)
+            document.div.appendChild(novob)
+            conteudo = document.getElementById('texto').value = "";
+        
+        }
+    
+    </script>
+    </div>
+</body>
+</html>
