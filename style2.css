@@ -22,7 +22,10 @@ section {
     border: 4mm ridge rgb(11, 2, 51);
     font-size: 20px;
 }
-
+#nos{
+    text-align: center;
+    color: red;
+}
 a {
     background: white;
     border-radius: 10px;
