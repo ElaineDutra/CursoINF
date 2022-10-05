@@ -7,30 +7,33 @@
     <link rel="stylesheet" type="text/css" href="Estilo.css">
 </head>
 <body>
-    <br>
-    <br>
-    <h1> To Do List </h1>
+    <div id="cbç">
+    <h1> My to do list </h1>
+    <b> <a href="about_us_list.html"> Desenvolvedores </a> </b>
+    </div>
     <div class="Listagem">
     <input id="texto">
-    <button onclick="Adicionar();" id="botão" placeholder="Nomes"> ADD </button>
-
+    <button onclick="Adicionar();" id="botão" placeholder="tarefas"> ADD </button>
     <script>
+    
         function Adicionar()
         {
-            
+           
             const conteudo = document.getElementById('texto').value;
-            const novo = document.createElement('p');
-            const novob = document.createElement('button')
-        
+            const novo = document.createElement('li');
             novo.innerHTML = conteudo;
-            novob.innerHTML = "X";
-            novob.style.color = "Red";
+            const novob = document.createElement('button');
+            novob.id = "Excluir";
+            novob.innerHTML = "Excluir";
+            novob.style.color = "white";
+
+
 
             
 
 
             novo.addEventListener('click',function(){
-            novo.style.color = "blueviolet";
+            novo.style.color = "White";
             novo.style.textDecoration ="line-through";
         })
             novob.addEventListener('click',function(){
@@ -43,7 +46,7 @@
             conteudo = document.getElementById('texto').value = "";
         
         }
-    
+
     </script>
     </div>
 </body>

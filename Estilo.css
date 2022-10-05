@@ -1,27 +1,31 @@
-body{
-    background-color: aliceblue;
+html{
+    background-image: url(Wllblue.png);
     background-size: cover;
-    
-    
 }
+body{
+    margin: 20px;
+    border: 8px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    background-color: rgba(16, 16, 95, 0.486);
+}
+ #cbç{
+    background-color: black;
+    text-align: center;
+ }
+ 
 
 h1{
     color: aliceblue;
-    font-family: Verdana, Geneva;
-    font-size: 750%;
+    font-family: times;
+    font-size: 300%;
     text-align: center;
+    padding: 15px;
     margin: 0px;
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%,
-    rgb(29, 33, 253) 50%, 
-    rgb(69, 215, 252) 100%);
-    
+    background-color: black;
 
 }
 .Listagem{
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%,
-    rgb(29, 33, 253) 50%, 
-    rgb(69, 215, 252) 100%);
-    
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -33,29 +37,59 @@ h1{
     padding: 10px;
     border: none;
     font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
      
 }
-p{
-    font-family: Apple Chancery, cursive;
+li{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    text-align: center;
     margin: 0px;
+    background-color: rgb(12, 12, 117);
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    transition: 0.2s;
+    user-select: none;
+
 
 }
-button{
-    width: 25%;
+
+#botão{
+    border-color: rgb(26, 1, 107);; ;
     padding: 10px;
     margin-left:0;
-    background: #d9d9d9;
-    color: #555;
+    background:rgb(26, 1, 107);;;
+    color: white;
     text-align: center;
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-#botão{
+#Excluir{
+    border-color: rgb(26, 1, 107);; ;
+    padding: 10px;
+    margin-left:0;
+    background:rgb(26, 1, 107);;;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+
+}
+
+a{
+    font-style: bold;
+    font-size: x-large;
+    font-family: Times;
+    color:  white ;
     text-align: center;
 }
