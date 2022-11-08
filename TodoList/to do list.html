@@ -15,7 +15,24 @@
     <input id="texto">
     <button onclick="Adicionar();" id="botão" placeholder="tarefas"> ADD </button>
     <script>
-    
+
+              <div>
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" autocomplete="off">
+                    </div>
+                    <div class="card-content-area">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" autocomplete="off"></input>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="submit" value="login" class="submit"></input>
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                </div>
+        </div>
+
         function Adicionar()
         {
            
