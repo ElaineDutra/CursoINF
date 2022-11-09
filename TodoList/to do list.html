@@ -4,15 +4,42 @@
     <link rel="stylesheet" type="text/css" href="Estilo.css">
 </head>
 <body>
+ <br><br><br><br><br><br><br><br><br><br>
+ 
+    <div id="login">
+        <form class="card">
+            <div class="card-header">
+                <h2>Login</h2>
+            </div>
+            <div class="card-content">
+                <div class="card-content-area">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario" autocomplete="off"></input>
+                </div>
+                <div class="card-content-area">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" autocomplete="off"></input>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" value="login" class="submit"></input>
+
+            </div>
+        </form>
+    </div>
+     
+    <div id="lista">
+
     <div id="cbç">
     <h1> My to do list </h1>
-    <b> <a href="about_us_list.html"> Desenvolvedores </a></b>
+    <b> <a href="about_us_list.html"> Desenvolvedores </a> </b>
     </div>
     <div class="Listagem">
     <input id="texto">
     <button onclick="Adicionar();" id="botão" placeholder="tarefas"> Adicionar </button>
-    <script>
 
+
+    <script>
         function Adicionar()
         {
            
@@ -45,6 +72,7 @@
         }
 
     </script>
+    </div>
     </div>
 </body>
 </html>

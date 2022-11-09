@@ -93,3 +93,11 @@ a{
     color:  white ;
     text-align: center;
 }
+
+#lista{
+    display:none;
+}
+
+#login{
+    text-align: center;
+}
