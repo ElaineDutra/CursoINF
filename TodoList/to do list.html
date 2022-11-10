@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="card-footer">
-                <input type="submit" value="login" class="submit"></input>
+                <input type="submit" value="login" class="submit" onclick="validar()"></input>
             </div>
         </form>
     </div>
@@ -78,12 +78,20 @@
             conteudo = document.getElementById('texto').value = "";
         
         }
-            var nome = document.getElementById('nome');
-            var email = document.getElementById('email');
-            var senha = document.getElementById('passowrd');
-            var confirmar = document.getElementById('confirm');
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('password').value;
+            var confirmar = document.getElementById('confirm').value;
 
-            if((nome <= 10)&(email)
+           function validar(){
+               if(senha == confirmar){
+                document.getElementById('Lista').style = "inline-block";
+                }
+                else{ 
+                alert('SENHAS DIFERENTES OU INCORRETAS, TENTE NOVAMENTE');
+
+                }
+        }
     </script>
     </div>
     </div>
