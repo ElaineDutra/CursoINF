@@ -9,25 +9,22 @@
     <div id="login">
         <form class="card">
             <div class="card-header">
-                <h2>Login</h2>
+                <h2>CADASTRE-SE</h2>
             </div>
             <div class="card-content">
                 <div class="card-content-area">
-                    <label for="Nome">Nome</label>
-                    <input type="text" id="nome" autocomplete="off"></input>
+                    <input type="text" id="nome" autocomplete="off" placeholder="Digite seu nome..."></input>
                 </div> 
                 <div class="card-content">
                     <div class="card-content-area">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" autocomplete="off"></input>
+                        <input type="text" id="email" autocomplete="off" placeholder="Digite seu email..."></input>
                     </div>
+                </div>
                 <div class="card-content-area">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" autocomplete="off"></input>
+                    <input type="password" id="password" autocomplete="off" placeholder="Digite seu senha..."></input>
                 </div>  
                 <div class="card-content-area">
-                    <label for="confirm">Confirmar Senha</label>
-                    <input type="password" id="confirm" autocomplete="off"></input>
+                    <input type="password" id="confirm" autocomplete="off" placeholder="Confirme sua senha..."></input>
                 </div>
             </div>
             <div class="card-footer">
@@ -38,14 +35,16 @@
      
     <div id="lista">
 
-    <div id="cbç">
-    <h1> My to do list </h1>
-    <b> <a href="about_us_list.html"> Desenvolvedores </a> </b>
-    </div>
-    <div class="Listagem">
-    <input id="texto">
-    <button onclick="Adicionar();" id="botão" placeholder="tarefas"> Adicionar </button>
-
+        <div id="cbç">
+            <h1> My to do list </h1>
+            <b> <a href="about_us_list.html"> Desenvolvedores </a> </b>
+        </div>
+   
+         <div class="Listagem">
+            <input id="texto">
+             <button onclick="Adicionar();" id="botão" placeholder="tarefas"> Adicionar </button>
+         </div>
+    </div>   
 
     <script>
         function Adicionar()
@@ -86,10 +85,11 @@
            function validar(){
                if(senha == confirmar){
                 alert('USUÁRIO CADASTRADO :)');
-                document.getElementById('Lista').style = "inline-block";
+                document.getElementById('lista').style.display = "block";
+                document.getElementById('login').style.display = "none";
                 }
-                else{ 
-                alert('SENHAS DIFERENTES OU INCORRETAS, TENTE NOVAMENTE');
+                if(senha !== confirmar){
+                alert('SENHAS DIFERENTES, TENTE NOVAMENTE');
 
                 }
         }
