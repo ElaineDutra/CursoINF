@@ -1,0 +1,59 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div id="login">
+        <form class="card">
+            <div class="card-header">
+                <h2>CADASTRE-SE</h2>
+            </div>
+                <div class="card-content">
+                    <div class="card-content-area">
+                     <input type="text" id="nome" autocomplete="off" placeholder="Digite seu nome..."></input>
+                    </div> 
+                </div>
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <input type="text" id="email" autocomplete="off" placeholder="Digite seu email..."></input>
+                    </div>
+                </div>
+                <div class="card-content-area">
+                    <input type="password" id="password" autocomplete="off" placeholder="Digite seu senha..."></input>
+                </div>  
+                <div class="card-content-area">
+                    <input type="password" id="confirm" autocomplete="off" placeholder="Confirme sua senha..."></input>
+                </div>
+            <div class="card-footer">
+                <input type="submit" value="login" class="submit" onclick="validar()"></input>
+            </div>
+        </form>
+    </div>
+     
+  <script>
+            var nome = document.getElementById('nome');
+            var email = document.getElementById('email');
+            var senha = document.getElementById('password');
+            var confirmar = document.getElementById('confirm');
+
+           function validar(){
+               if(senha.value == confirmar.value){
+                alert('USUÁRIO CADASTRADO :)');
+                window.location.href = "./to do list.html";
+                }
+
+                else{
+                    if(senha !== confirmar){
+                         alert('SENHAS DIFERENTES, TENTE NOVAMENTE');
+
+                }
+            }
+        }
+    </script>
+    </div>
+    </div>
+</body>
+</html>
