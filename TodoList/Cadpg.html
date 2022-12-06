@@ -33,25 +33,24 @@
                     <input type="password" id="confirm" autocomplete="off" placeholder="Confirme sua senha..."></input>
                 </div>
             <div class="card-footer">
-                <input type="submit" value="Login" class="submit" onclick="validar()"></input>
+                <input type="submit" value="Login" class="submit" onclick="validar();"></input>
             </div>
         </form>
     </div>
      
   <script>
 
-            var nome = document.getElementById('nome');
-            var login = document.getElementById('login');
+            var nome = document.getElementById('nome').value;
+            var login = document.getElementById('login').value;
             var email = document.getElementById('email').value;
-            var senha = document.getElementById('password');
-            var confirmar = document.getElementById('confirm');
+            var senha = document.getElementById('password').value;
+            var confirmar = document.getElementById('confirm').value;
 
            function validar(){
-               if(login.value.lenght <= 10 && nome.value.lenght >= 10 && senha.value == confirmar.value)  {
-
+               if(nome.lenght >= 10 && login.lenght <= 10 && senha == confirmar) {
                 alert('USUÁRIO CADASTRADO :)');
                 window.open("to do list.html");
-                window.close("Cadpg.html");
+           
                 }
 
                 else{
