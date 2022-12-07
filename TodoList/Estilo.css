@@ -7,10 +7,10 @@ body{
     border: 8px solid;
     padding: 10px;
     box-shadow: 5px 10px;
-    background-color: rgba(16, 16, 95, 0.486);
+    background-color: rgba(43, 182, 73, 0.486);
 }
  #cbç{
-    background-color: black;
+    
     text-align: center;
  }
  
@@ -22,7 +22,7 @@ h1{
     text-align: center;
     padding: 15px;
     margin: 0px;
-    background-color: black;
+
 
 }
 .Listagem{
@@ -45,7 +45,7 @@ li{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     margin: 0px;
-    background-color: rgb(12, 12, 117);
+   
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -57,10 +57,10 @@ li{
 }
 
 #botão{
-    border-color: rgb(26, 1, 107);; ;
+    border-color:  rgba(43, 182, 73, 0.486);; ;
     padding: 10px;
     margin-left:0;
-    background:rgb(26, 1, 107);;;
+    background: rgba(43, 182, 73, 0.486);;;
     color: white;
     text-align: center;
     font-size: 14px;
@@ -70,10 +70,10 @@ li{
     font-weight: bold;
 }
 #Excluir{
-    border-color: rgb(26, 1, 107);; ;
+    border-color:  rgba(43, 182, 73, 0.486);; ;
     padding: 10px;
     margin-left:0;
-    background:rgb(26, 1, 107);;;
+    background: rgba(43, 182, 73, 0.486);;;
     color: white;
     text-align: center;
     font-size: 14px;
